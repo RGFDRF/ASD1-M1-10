@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-26T16:04:39.199Z",
+  "runtime": "v20.20.2",
+  "passed": 14,
+  "total": 14,
+  "tests": [
+    {
+      "name": "Walidacja zakresu 0–999",
+      "input": "0, 999, -1, 1000, 1.5, \"12x\"",
+      "expected": "[true,true,false,false,false,false]",
+      "actual": "[true,true,false,false,false,false]",
+      "status": "PASS"
+    },
+    {
+      "name": "Niepoprawne wstawienie nie zmienia stanu",
+      "input": "+1.5",
+      "expected": "[true,0,7]",
+      "actual": "[true,0,7]",
+      "status": "PASS"
+    },
+    {
+      "name": "Duplikat nie powoduje przebudowy przy progu",
+      "input": "+1,+2,+3,+4,+1",
+      "expected": "[\"duplicate\",7,4]",
+      "actual": "[\"duplicate\",7,4]",
+      "status": "PASS"
+    },
+    {
+      "name": "Łańcuchy dopisują, znajdują i usuwają element ze środka",
+      "input": "+10,+17,+24,-17,?24",
+      "expected": "[\"10,17,24\",3,true,true,\"10,24\"]",
+      "actual": "[\"10,17,24\",3,true,true,\"10,24\"]",
+      "status": "PASS"
+    },
+    {
+      "name": "Przykład kontrolny: komórki 3,4,5; DELETED; znalezienie 24",
+      "input": "+10,+17,+24,-17,?24",
+      "expected": "[3,4,5,\"DELETED\",true,5]",
+      "actual": "[3,4,5,\"DELETED\",true,5]",
+      "status": "PASS"
+    },
+    {
+      "name": "Stan pośredni: wyszukiwanie kontynuuje za DELETED",
+      "input": "+10,+17,+24,-17,?24",
+      "expected": "[\"DELETED\",4,5,true]",
+      "actual": "[\"DELETED\",4,5,true]",
+      "status": "PASS"
+    },
+    {
+      "name": "Stan pośredni: duplikat za DELETED nie nadpisuje tombstone",
+      "input": "+10,+17,+24,-17,+24",
+      "expected": "[\"DELETED\",4,5,true]",
+      "actual": "[\"DELETED\",4,5,true]",
+      "status": "PASS"
+    },
+    {
+      "name": "Pierwszy DELETED wykorzystany dopiero po kontroli do EMPTY",
+      "input": "+10,+17,+24,-17,+31",
+      "expected": "[4,4,\"OCCUPIED\",31]",
+      "actual": "[4,4,\"OCCUPIED\",31]",
+      "status": "PASS"
+    },
+    {
+      "name": "Zawijanie liniowe: 6,0,1",
+      "input": "+6,+13,+20",
+      "expected": "[6,0,1]",
+      "actual": "[6,0,1]",
+      "status": "PASS"
+    },
+    {
+      "name": "Piąte dodanie przebudowuje 7→15 i zachowuje wszystkie klucze",
+      "input": "+10,+17,+24,+31,+38",
+      "expected": "[15,1,4,true]",
+      "actual": "[15,1,4,true]",
+      "status": "PASS"
+    },
+    {
+      "name": "Kolejność rehashingu po ponownym dodaniu",
+      "input": "+24,+10,+17,-10,+10,+31,+38",
+      "expected": "[15,[24,17,10,31],[24,17,10,31,38]]",
+      "actual": "[15,[24,17,10,31],[24,17,10,31,38]]",
+      "status": "PASS"
+    },
+    {
+      "name": "Usunięcie brakującego klucza bez zmiany n",
+      "input": "-88",
+      "expected": "[0,0]",
+      "actual": "[0,0]",
+      "status": "PASS"
+    },
+    {
+      "name": "20 aktywnych dozwolone, 21. odrzucony; zwolnione miejsce można użyć",
+      "input": "wstaw 0..20, usuń 5, dodaj 20",
+      "expected": "[20,\"limit\",20,true]",
+      "actual": "[20,\"limit\",20,true]",
+      "status": "PASS"
+    },
+    {
+      "name": "Obie metody stosują tę samą przebudowę przy n=4",
+      "input": "+10,+17,+24,+31,+38",
+      "expected": "[15,15,5,5]",
+      "actual": "[15,15,5,5]",
+      "status": "PASS"
+    }
+  ]
+}

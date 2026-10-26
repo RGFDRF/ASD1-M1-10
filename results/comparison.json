@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-26T15:58:30.779Z",
+  "definition": {
+    "inputSize": "4 klucze; następnie 2 wyszukiwania (jedno trafione, jedno nietrafione) i 1 usunięcie",
+    "comparisons": "Liczba porównań klucza z aktywnym kluczem w strukturze; EMPTY/DELETED nie są porównaniem kluczy.",
+    "visits": "Liczba odwiedzonych węzłów łańcucha lub komórek tablicy w badanych operacjach.",
+    "rehash": "Osobna liczba przebudów i przeniesionych aktywnych kluczy; nie sumowana z odwiedzinami operacji.",
+    "timing": "Nie raportowano czasu ściennego — liczono operacje elementarne, aby uniknąć szumu środowiska."
+  },
+  "results": [
+    {
+      "dataset": "Równomiernie rozłożone",
+      "keys": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "successfulFind": 24,
+      "unsuccessfulFind": 99,
+      "removed": 16,
+      "methods": {
+        "chain": {
+          "n": 3,
+          "m": 7,
+          "loadFactor": 0.429,
+          "comparisons": 3,
+          "visits": 3,
+          "rehashCount": 0,
+          "rehashMoves": 0
+        },
+        "linear": {
+          "n": 3,
+          "m": 7,
+          "loadFactor": 0.429,
+          "comparisons": 6,
+          "visits": 11,
+          "rehashCount": 0,
+          "rehashMoves": 0
+        }
+      }
+    },
+    {
+      "dataset": "Kolizje: 10, 17, 24, 31",
+      "keys": [
+        10,
+        17,
+        24,
+        31
+      ],
+      "successfulFind": 24,
+      "unsuccessfulFind": 99,
+      "removed": 17,
+      "methods": {
+        "chain": {
+          "n": 3,
+          "m": 7,
+          "loadFactor": 0.429,
+          "comparisons": 11,
+          "visits": 11,
+          "rehashCount": 0,
+          "rehashMoves": 0
+        },
+        "linear": {
+          "n": 3,
+          "m": 7,
+          "loadFactor": 0.429,
+          "comparisons": 11,
+          "visits": 16,
+          "rehashCount": 0,
+          "rehashMoves": 0
+        }
+      }
+    }
+  ]
+}
