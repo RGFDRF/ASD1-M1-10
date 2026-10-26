@@ -1,12 +1,10 @@
-# Lista oddania
+# Kontrola wydania
 
 - [x] Aplikacja i kod źródłowy
-- [x] README i testy z aktualnym raportem
-- [x] 10 slajdów prezentacji
-- [x] Dokumentacja PDF, 10 stron
-- [x] Rzeczywiste, podpisane zrzuty
-- [x] Dane autora i opis pomocy AI
-- [x] Repozytorium GitHub: https://github.com/RGFDRF/ASD1-M1-10
-- [ ] Dostęp prowadzącego do prywatnego repozytorium
-- [ ] Wysłanie plików i osobnego linku w Dzienniku
-- [ ] Samodzielne przećwiczenie obrony
+- [x] README z opisem uruchomienia
+- [x] Testy algorytmów i regresji
+- [x] Raporty testów i porównania
+- [x] Dokumentacja PDF i źródło HTML
+- [x] Prezentacja HTML i PDF
+- [x] Zrzuty działającej aplikacji
+- [x] Informacja o autorze i pomocy AI

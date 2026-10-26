@@ -1,4 +1,4 @@
-# Plan pokazu i przygotowanie do obrony
+# Demonstracja aplikacji
 
 ## Kolejność pokazu
 
@@ -30,6 +30,3 @@
 
 **Co obejmuje koszt przebudowy?** Przeniesienie aktywnych elementów i ponowne wyliczenie indeksów; aplikacja liczy go osobno od operacyjnych odwiedzin/porównań.
 
-## Przed obroną
-
-PDF i zrzuty zostały przygotowane. Testy uruchomiono na tym Macu. Samodzielnie przećwicz wyjaśnienie funkcji insert, find, remove i rebuild oraz pokaz z początku instrukcji. Nie deklaruj samodzielnego napisania kodu; opisz pomoc AI zgodnie z dokumentacją.
