@@ -43,6 +43,6 @@ Autor projektu: Daniel Zawisza, indeks 93796. Przy opracowaniu kodu, testów, wi
 
 ## Oddanie
 
-Wgraj kod, testy, README i materiały do repozytorium GitHub. Link do repozytorium wpisz osobno w polu „Linki” w Dzienniku. Dołącz wymagane pliki, w tym PDF dokumentacji i prezentację. Projekt nie został jeszcze opublikowany ani oddany w Dzienniku; wymagane jest logowanie do konta.
+Wgraj kod, testy, README i materiały do repozytorium GitHub. Link do repozytorium wpisz osobno w polu „Linki” w Dzienniku. Dołącz wymagane pliki, w tym PDF dokumentacji i prezentację. Repozytorium projektu: <https://github.com/RGFDRF/ASD1-M1-10> (prywatne; prowadzący potrzebuje dostępu). Pliki nie zostały jeszcze oddane w Dzienniku.
 
 Terminy zapisane w przekazanych materiałach: oddanie 26.10.2026 do 23:59; obrona 28.10.2026, 08:30–11:40.

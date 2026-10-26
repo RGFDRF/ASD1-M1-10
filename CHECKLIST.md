@@ -6,6 +6,7 @@
 - [x] Dokumentacja PDF, 10 stron
 - [x] Rzeczywiste, podpisane zrzuty
 - [x] Dane autora i opis pomocy AI
-- [ ] Publikacja GitHub po zalogowaniu
+- [x] Repozytorium GitHub: https://github.com/RGFDRF/ASD1-M1-10
+- [ ] Dostęp prowadzącego do prywatnego repozytorium
 - [ ] Wysłanie plików i osobnego linku w Dzienniku
 - [ ] Samodzielne przećwiczenie obrony
